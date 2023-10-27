@@ -69,8 +69,10 @@
                                                     method="POST">
                                                     <a href="{{ route('students.show', $student->id) }}"
                                                         class="btn btn-warning">Show</a>
+                                                    <p></p>
                                                     <a href="{{ route('students.edit', $student->id) }}"
                                                         class="btn btn-warning">Edit</a>
+                                                    <p></p>
                                                     @csrf
                                                     @method('DELETE')
                                                     <button type="submit" class="btn btn-danger">Hapus</button>
